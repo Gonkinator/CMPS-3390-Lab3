@@ -7,9 +7,11 @@
     <properties/>
     <border type="none"/>
     <children>
-      <scrollpane id="c3b63">
+      <scrollpane id="c3b63" binding="ScrollPane">
         <constraints border-constraint="Center"/>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="e9354" class="javax.swing.JList" binding="studentList">
@@ -26,7 +28,7 @@
           <component id="c5a24" class="javax.swing.JLabel" binding="labelFIrstName">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="0.0" weighty="0.0"/>
+              <gridbag top="5" left="5" bottom="5" right="5" weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
               <text value="First Name"/>
@@ -37,7 +39,7 @@
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
-              <gridbag weightx="0.0" weighty="0.0"/>
+              <gridbag top="5" left="5" bottom="5" right="5" weightx="0.0" weighty="0.0" ipadx="5" ipady="5"/>
             </constraints>
             <properties>
               <columns value="10"/>
@@ -46,7 +48,7 @@
           <component id="4ffa" class="javax.swing.JLabel" binding="labelLastName">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="0.0" weighty="0.0"/>
+              <gridbag top="5" left="5" bottom="5" right="5" weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
               <text value="Last Name"/>
@@ -57,14 +59,14 @@
               <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
-              <gridbag weightx="0.0" weighty="0.0"/>
+              <gridbag top="5" left="5" bottom="5" right="5" weightx="0.0" weighty="0.0" ipadx="5" ipady="5"/>
             </constraints>
             <properties/>
           </component>
           <component id="589e5" class="javax.swing.JLabel" binding="labelStudentID">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="0.0" weighty="0.0"/>
+              <gridbag top="5" left="5" bottom="5" right="5" weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
               <text value="Student ID"/>
@@ -75,7 +77,7 @@
               <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
-              <gridbag weightx="0.0" weighty="0.0"/>
+              <gridbag top="5" left="5" bottom="5" right="5" weightx="0.0" weighty="0.0" ipadx="5" ipady="5"/>
             </constraints>
             <properties/>
           </component>

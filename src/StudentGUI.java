@@ -15,6 +15,7 @@ public class StudentGUI extends JFrame {
     private JPanel studentActions;
     private JButton buttonAddStudent;
     private JButton buttonRemoveStudent;
+    private JScrollPane ScrollPane;
 
     public StudentGUI(){
         setContentPane(panel1);
@@ -36,6 +37,12 @@ public class StudentGUI extends JFrame {
                 String element = String.format("%s %s (%s)", firstName, lastName, studentID);
                 studentListData.addElement(element);
                 studentList.setModel((studentListData));
+
+                inputFirstName.setText("");
+                inputLastName.setText("");
+                inputStudentID.setText("");
+
+                inputFirstName.grabFocus();
             }
         });
 
