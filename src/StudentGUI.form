@@ -87,6 +87,19 @@
           </vspacer>
         </children>
       </grid>
+      <grid id="99dbf" binding="studentActions" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="45670" class="javax.swing.JButton" binding="buttonAddStudent">
+            <constraints/>
+            <properties>
+              <text value="Button"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
     </children>
   </grid>
 </form>
