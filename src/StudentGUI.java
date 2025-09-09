@@ -1,8 +1,10 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class StudentGUI extends JFrame {
     private JPanel panel1;
-    private JList studentList;
+    private JList<String> studentList;
     private JPanel studentInput;
     private JLabel labelFIrstName;
     private JTextField inputFirstName;
@@ -19,5 +21,35 @@ public class StudentGUI extends JFrame {
         setSize(500, 500 );
         setTitle("Student List");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        DefaultListModel<String> studentListData = new DefaultListModel<>();
+
+        buttonAddStudent.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String firstName = inputFirstName.getText();
+                String lastName = inputLastName.getText();
+                String studentID = inputStudentID.getText();
+
+                if(firstName.isBlank() || lastName.isBlank() || studentID.isBlank()){return;}
+
+                String element = String.format("%s %s (%s)", firstName, lastName, studentID);
+                studentListData.addElement(element);
+                studentList.setModel((studentListData));
+            }
+        });
+
+        buttonRemoveStudent.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int studentIndex = studentList.getSelectedIndex();
+
+                if(studentIndex < 0){return;}
+
+                studentListData.remove(studentIndex);
+                studentList.setModel(studentListData);
+            }
+        });
     }
 }
+
