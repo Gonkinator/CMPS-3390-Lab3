@@ -95,7 +95,13 @@
           <component id="45670" class="javax.swing.JButton" binding="buttonAddStudent">
             <constraints/>
             <properties>
-              <text value="Button"/>
+              <text value="Add Student"/>
+            </properties>
+          </component>
+          <component id="99ded" class="javax.swing.JButton" binding="buttonRemoveStudent">
+            <constraints/>
+            <properties>
+              <text value="Remove Student"/>
             </properties>
           </component>
         </children>

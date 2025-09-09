@@ -12,6 +12,7 @@ public class StudentGUI extends JFrame {
     private JTextField inputStudentID;
     private JPanel studentActions;
     private JButton buttonAddStudent;
+    private JButton buttonRemoveStudent;
 
     public StudentGUI(){
         setContentPane(panel1);
